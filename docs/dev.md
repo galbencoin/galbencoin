@@ -9,7 +9,7 @@ To set up a virtual environment and manage dependencies for this project, follow
    Navigate to your project directory and run the following command to create a virtual environment named `venv`:
 
    ```bash
-   python -m venv venv
+   python3 -m venv venv
    ```
 
 2. **Activate the virtual environment**:
