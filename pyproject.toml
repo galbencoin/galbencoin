@@ -1,15 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "GalbenCoin"
-dynamic = ["version"]
-requires-python = ">= 3.12"
-dependencies = [
-]
+name = "galbencoin"
+version = "0.1.0"
+requires-python = ">=3.7"
+dependencies = ["pytest"]
 authors = [
-  {name = "Galben Coin", email = "admin@galben.org"},
+  { name = "Galben Coin", email = "admin@galben.org" }
 ]
 description = "A decentralized cryptocurrency platform."
 readme = "README.md"
-license = {text = "The MIT License (MIT)"}
+license = { text = "The MIT License (MIT)" }
 classifiers = [
     "Framework :: Blockchain",
     "Intended Audience :: Financial and Insurance Industry",
@@ -21,7 +24,11 @@ classifiers = [
 [project.urls]
 Homepage = "https://www.galben.org/"
 Documentation = "https://docs.galben.org/"
-"Release notes" = "https://github.com/galbencoin/galbencoin/releases/"
+ReleaseNotes = "https://github.com/galbencoin/galbencoin/releases/"
 Funding = "https://www.galben.org/fund/"
 Source = "https://github.com/galbencoin/galbencoin"
 Tracker = "https://github.com/galbencoin/galbencoin/issues"
+
+[project.scripts]
+galbencoin-node = "galbencoin.cmd.node:main"
+galbencoin-wallet = "galbencoin.cmd.wallet:main"
