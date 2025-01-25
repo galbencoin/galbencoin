@@ -35,7 +35,7 @@ To set up a virtual environment and manage dependencies for this project, follow
    With the virtual environment activated, install all required dependencies by running:
 
    ```bash
-   pip install -r requirements.txt
+   pip install .
    ```
 
 ### Additional Development Notes
