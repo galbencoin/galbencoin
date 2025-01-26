@@ -8,3 +8,16 @@ class Block(BaseModel):
     previous_hash: Optional[str]
     hash: Optional[str]
     merkle_root: Optional[str]
+    def __init__(self, **data):
+        super().__init__(**data)
+"""
+data = {
+    "id": 123,
+    "timestamp": datetime.now(),
+    "previous_hash": None,
+    "hash": None,
+    "merkle_root": None
+}
+
+block = Block(**data)
+"""
