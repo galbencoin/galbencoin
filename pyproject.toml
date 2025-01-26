@@ -6,7 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "galbencoin"
 version = "0.1.0"
 requires-python = ">=3.7"
-dependencies = ["pytest"]
+dependencies = [
+  "pytest",
+  "pydantic"
+]
 authors = [
   { name = "Galben Coin", email = "admin@galben.org" }
 ]
